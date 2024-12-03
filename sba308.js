@@ -12,8 +12,8 @@
 
 
 
-// I. Variables & Datatypes
-//-------------------------
+
+// ------------------------------------ I. Variables & Datatypes --------------------------------------------------------------
 
 
 // A. Q+A ---------------------------
@@ -109,7 +109,7 @@
             }
       }
 
-      theFarm(); // 4. Commit.
+      // theFarm(); // 4. Commit.
 
 
 // E. Driver's Ed
@@ -128,4 +128,96 @@
                console.log("Sorry, you're too young.");
             } 
       }
-      driversID();
+      // driversID(); 
+
+
+
+
+
+// ----------------------------------- II. Loops ---------------------------------------------------------
+
+// A. The basics
+      function theBasics () {
+         // 1. Write a loop that will print out all the numbers from 0 to 10, inclusive
+            for (let loopOne = 0; loopOne <= 10; loopOne++) {
+               console.log(loopOne);
+            }
+
+         // 2. Write a loop that will print out all the numbers from 10 up to and including 400
+            for (let loopTwo = 0; loopTwo <= 400; loopTwo++) {
+               console.log(loopTwo);
+            }
+         
+         // 3. Write a loop that will print out every third number starting with 12 and going no higher than 4000
+            for (let loopThree = 12; loopThree <= 4000; loopThree += 3) {
+               console.log(loopThree);
+            }
+      }
+      // theBasics();
+
+
+// B. Get even
+      function getEven () {
+         // 1. Print out the numbers that are within the range of 1 - 100
+            for (let num = 0; num <= 100; num++) {
+               if (num % 2 === 0) {
+
+               // 2. Adjust your code to add a message next to even numbers only that says: "<-- is an even number".
+                  console.log (`${num} <-- Is an even number`);
+               } else {
+                  console.log (num);
+               }
+            }
+      }
+      // getEven();
+
+
+// C. Give me Five
+      function giveMeFive () {
+         
+            for (let Hi5 = 0; Hi5 <= 100; Hi5++) {
+
+         // 3. For numbers divisible by both three and five, be sure your code prints both messages.
+               if ((Hi5 % 3 === 0) && (Hi5 % 5 ===0)) {
+                  console.log(`I found the number ${Hi5}. High Five!`);
+                  console.log(`I found the number ${Hi5}. Three is a crowd`);
+               } 
+               
+         // 1. For the numbers 0 - 100, print out "I found a number. High five!" if the number is a multiple of five
+               else if (Hi5 % 5 === 0) {
+                  console.log(`I found the number ${Hi5}. High Five!`);
+               } 
+               
+         // 2. Add to the code from above to print out "I found a number. Three is a crowd" if the number is a multiple of three
+               else if (Hi5 % 3 === 0) {
+                  console.log(`I found the number ${Hi5}. Three is a crowd`);
+               } else {
+                  console.log (Hi5);
+               }
+            }
+      }
+      // giveMeFive();
+
+
+// D. Savings account
+      function savingAccount () {
+         // 1. Write code that will save the sum of all the numbers between 1 - 10 to a variable called bank_account.
+            let bank_account = 0 ;
+            let i = 0;
+            while (i <= 10) {
+               bank_account += i ;
+               i++ ;
+            }
+               // Check your work! Your bank_account should have $55 in it.
+               console.log (`Bank Account : ${bank_account}$.`);
+
+         // 2. You got a bonus! Your pay is now doubled each week. Write code that will save the sum of all the numbers between 1 - 100 multiplied by 2.
+            while (i <= 100) {
+               bank_account += i;
+               i++ ;
+            }
+               // Check your work! Your bank_account should have $10,100 in it.
+               console.log (`Bank Account : ${bank_account * 2}$.`);
+
+      }
+      // savingAccount();
