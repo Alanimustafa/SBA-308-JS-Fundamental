@@ -1,4 +1,4 @@
-// SBA 308 - JavaScript Fundamentals
+// SBA 308 - JavaScript Total Recall
 //----------------------------------
 
 
