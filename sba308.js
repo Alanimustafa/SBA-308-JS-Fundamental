@@ -676,21 +676,22 @@
             return { mama, papa}
          }
 
-         console.log(combineCats(cat1, cat2));
+       //  console.log(combineCats(cat1, cat2));
 
       // Make it so the combineCats function will return a combination of the two incoming cats
-         console.log(combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" }));  
+       //  console.log(combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" }));  
 
 
 // 4. Cat brain bender
       // Two Levels deep of combineCats
-      console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+     // console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
 
       // Write a console.log that is three levels deep of combineCats. combineCats should have two arguments, each which are combineCats, each which have two arguments, each which are combineCats.
-      console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
+     
+     // console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
 
       
 
 
-
+// ------------------------------------------------------------- SBA 308 End -----------------------------------------------------
            
