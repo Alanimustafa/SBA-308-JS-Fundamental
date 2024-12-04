@@ -616,5 +616,81 @@
             
 // ------------------------------------- Requirements Complete! -------------------------------------------------------------- //
 
+// Hungry for More?
+
+// Cat Combinator
+
+// 1. Mama cat
+   /* Define an object called cat1that contains the following properties:
+      name
+      breed
+      age (a number)
+      console.log the cat's age
+      console.log the cat's breed
+   */
+   
+      
+          cat1 = {
+            name: "Quees",
+            breed: "Russian Blue Cat",
+            age: 76
+         }
+         // console.log(`Mama Cat ${cat1.name} age is ${cat1.age}`);
+         // console.log(`Mama Cat ${cat1.name} age is ${cat1.breed}`);
+      
+      
+// 2. Papa cat
+   /* Define an object called cat2that also contains the properties:
+      name
+      breed
+      age (a number)
+   */
+          cat2 = {
+            name: "Tom",
+            breed: "Aisan Blue Cat",
+            age: 86
+         }
+         //console.log(`Papa Cat ${cat2.name} age is ${cat2.age}`);
+         // console.log(`Papa Cat ${cat2.name} age is ${cat2.breed}`);
+
+
+// 3. Combine Cats!
+      // The cats are multiplying!
+      // Write a function combineCatsthat has two parameters mama, and papa. The function will take two arguments -- each a cat object.
+
+      // Pass cat1 and cat2 as arguments to the combineCats function. The function should console.log them.
+         function combineCats (mama, papa) {
+            // name is a concatenation of the parents' names
+               mama.name = mama.name + papa.name;
+               papa.name = papa.name + mama.name;
+
+            // the age is 1
+               mama.age = 1;
+               papa.age = 1;
+            
+            // the breed is each of the parents' breeds with a hyphen in between
+               mama.breed = mama.breed + "-" + papa.breed;
+               papa.breed = papa.breed + "-" + mama.breed;
+            // onsole.log (mama);  
+            // console.log (papa);
+            return { mama, papa}
+         }
+
+         console.log(combineCats(cat1, cat2));
+
+      // Make it so the combineCats function will return a combination of the two incoming cats
+         console.log(combineCats({ name: "Craig", age: 20, breed: "unknown" }, { name: "Linda", age: 20, breed: "undefined" }));  
+
+
+// 4. Cat brain bender
+      // Two Levels deep of combineCats
+      console.log(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)));
+
+      // Write a console.log that is three levels deep of combineCats. combineCats should have two arguments, each which are combineCats, each which have two arguments, each which are combineCats.
+      console.log(combineCats(combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2)), combineCats(combineCats(cat1, cat2), combineCats(cat1, cat2))));
+
+      
+
+
 
            
